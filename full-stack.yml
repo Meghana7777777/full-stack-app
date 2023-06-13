@@ -10,6 +10,11 @@
         src: /opt/jenkins/workspace/VisOps/t055/full-stack-app/full-stack
         dest: /home/ubuntu/
 
+    - name: Set execute permission for shell-commands.sh
+      become: true
+      shell: chmod +x shell-commands.sh
+      args:
+        chdir: /home/ubuntu/full-stack/
 
     - name: Installation
       become: true
