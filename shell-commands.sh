@@ -24,10 +24,10 @@ sudo chmod +x /usr/local/bin/docker-compose
 chmod +x shell-commands.sh
 
 # Create Container
-sudo docker run -it -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
+sudo docker run -d --name postgres-1 -e POSTGRES_PASSWORD=postgres -p 5432:5432 postgres
 
 # Connect to Container
-sudo docker exec postgres-db psql -U postgres -c "CREATE DATABASE themoviedb;
+sudo docker exec postgres-1 psql -U postgres -c "CREATE DATABASE themoviedb;
 
 #Change Directory
 cd full-stack/backend
