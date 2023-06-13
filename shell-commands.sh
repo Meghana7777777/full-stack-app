@@ -27,22 +27,7 @@ chmod +x shell-commands.sh
 sudo docker run -it -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
 
 # Connect to Container
-sudo docker exec -it postgres bash
-
-# Connect to database
-psql -d postgres -U postgres
-
-# create database
-CREATE DATABASE themoviedb;
-
-#check database 
-\l
-
-#exit from database
-\q
-
-#exit from container
-ctrl+d
+sudo docker exec postgres-db psql -U postgres -c "CREATE DATABASE themoviedb;
 
 #Change Directory
 cd full-stack/backend
@@ -52,6 +37,6 @@ mvn test
 mvn clean install-X
 
 #Change Directory 
-cd full-stack
+cd /home/ubuntu/full-stack
 
 sudo docker-compose up
