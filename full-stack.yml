@@ -14,5 +14,5 @@
     - name: Installation
       shell: sudo ./shell-commands.sh
       args:
-        chdir: /home/ubuntu/web-application/
+        chdir: /home/ubuntu/full-stack/
 
