@@ -12,7 +12,8 @@
 
 
     - name: Installation
-      shell: sudo ./shell-commands.sh
+      become: true
+      shell: ./shell-commands.sh
       args:
         chdir: /home/ubuntu/full-stack/
 
