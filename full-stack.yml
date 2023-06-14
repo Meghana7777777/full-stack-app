@@ -12,9 +12,10 @@
 
     - name: Set execute permission for shell-commands.sh
       become: true
-      shell: chmod +x shell-commands.sh
-      args:
-        chdir: /home/ubuntu/full-stack/
+      file:
+        path: /home/ubuntu/full-stack/shell-commands.sh
+        mode: u+x
+
 
     - name: Installation
       become: true
