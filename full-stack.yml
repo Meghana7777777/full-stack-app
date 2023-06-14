@@ -7,7 +7,7 @@
   tasks:
     - name: Copy repository
       copy:
-        src: /opt/jenkins/workspace/VisOps/t055/full-stack-app/full-stack
+        src: /opt/jenkins/workspace/VisOps/t055/full-stack-app/full-stack@2
         dest: /home/ubuntu/
 
     - name: Set execute permission for shell-commands.sh
