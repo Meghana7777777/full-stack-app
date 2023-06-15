@@ -3,7 +3,7 @@
 
 [java]
 
-java-ins     ansible_host=54.175.197.198    ansible_port=22     ansible_user=ubuntu     ansible_ssh_private_key_file="/opt/jenkins/workspace/VisOps/t055/full-stack-app/full-stack@2/jenkins-key.pem"
+java-ins     ansible_host=54.160.235.44    ansible_port=22     ansible_user=ubuntu     ansible_ssh_private_key_file="/opt/jenkins/workspace/VisOps/t055/full-stack-app/full-stack@2/jenkins-key.pem"
 
 
 [all:vars]
