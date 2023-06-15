@@ -13,7 +13,7 @@
     - name: Set execute permission for shell-commands.sh
       become: true
       file:
-        path: /home/ubuntu/full-stack/shell-commands.sh
+        path: /home/ubuntu/full-stack@2/shell-commands.sh
         mode: u+x
 
 
