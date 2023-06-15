@@ -27,5 +27,5 @@ chmod +x shell-commands.sh
 sudo docker run -d --name postgres1 -e POSTGRES_PASSWORD=postgres -p 5432:5432 postgres
 
 # Connect to Container
-sudo docker exec postgres1 psql -U postgres -c "CREATE DATABASE themoviedb;
+sudo docker exec -it postgres1 psql -U postgres -c "CREATE DATABASE themoviedb;"
 
