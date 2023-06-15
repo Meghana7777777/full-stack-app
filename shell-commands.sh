@@ -29,14 +29,3 @@ sudo docker run -d --name postgres1 -e POSTGRES_PASSWORD=postgres -p 5432:5432 p
 # Connect to Container
 sudo docker exec postgres1 psql -U postgres -c "CREATE DATABASE themoviedb;
 
-#Change Directory
-cd full-stack/backend
-
-mvn test
-
-mvn clean install-X
-
-#Change Directory 
-cd /home/ubuntu/full-stack
-
-sudo docker-compose up
